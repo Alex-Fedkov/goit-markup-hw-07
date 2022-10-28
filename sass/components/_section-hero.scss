@@ -1,0 +1,45 @@
+/* эффект */
+.hero {
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: var(--color-background-hero);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*кнопка*/
+.hero-but {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--color-button-text);
+    background: var(--color-for-hovered);
+
+    transition-property: background, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+
+        color: var(--color-for-hovered);
+        background: var(--color-button-text);
+    }
+}
+

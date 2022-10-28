@@ -1,0 +1,35 @@
+/* наши клиенты */
+.our-clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-clients li {
+    display: inline-block;
+}
+
+.our-clients-list svg {
+    fill: var(--color-fill);
+}
+
+.our-clients-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-fill);
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing);
+    &:hover,
+    &:focus,
+    &:hover svg,
+    &:focus svg {
+        border-color: var(--color-for-hovered);
+        fill: var(--color-for-hovered);
+    }
+}
+
